@@ -727,12 +727,12 @@ class CUSTOMER_ORDER:
                     self.customer_total_medium_pizza_price =  self.customer_medium_pizza_quantity_total * 14.99
                     if self.check_medium_pizza_in_list in self.customer_cart_list:
                         self.customer_cart_list.remove(self.check_medium_pizza_in_list)
-                        self.customer_cart_list.append(f'{self.customer_medium_pizza_quantity_total} medium_pizzas at $14.99 is ${self.customer_total_medium_pizza_price:.2f}')
+                        self.customer_cart_list.append(f'{self.customer_medium_pizza_quantity_total} Medium Pizzas at $14.99 is ${self.customer_total_medium_pizza_price:.2f}')
                         self.customer_order_amount += int(self.medium_pizza_amount_entry_box.get()) * 14.99
-                        self.check_medium_pizza_in_list = f'{self.customer_medium_pizza_quantity_total} medium_pizzas at $14.99 is ${self.customer_total_medium_pizza_price:.2f}'
+                        self.check_medium_pizza_in_list = f'{self.customer_medium_pizza_quantity_total} Medium Pizzas at $14.99 is ${self.customer_total_medium_pizza_price:.2f}'
                     else:
-                        self.customer_cart_list.append(f'{self.customer_medium_pizza_quantity_total} medium_pizzas at $14.99 is ${self.customer_total_medium_pizza_price:.2f}')
-                        self.check_medium_pizza_in_list = f'{self.customer_medium_pizza_quantity_total} medium_pizzas at $14.99 is ${self.customer_total_medium_pizza_price:.2f}'
+                        self.customer_cart_list.append(f'{self.customer_medium_pizza_quantity_total} Medium Pizzas at $14.99 is ${self.customer_total_medium_pizza_price:.2f}')
+                        self.check_medium_pizza_in_list = f'{self.customer_medium_pizza_quantity_total} Medium Pizzas at $14.99 is ${self.customer_total_medium_pizza_price:.2f}'
                         self.customer_order_amount += int(self.medium_pizza_amount_entry_box.get()) * 14.99
                     messagebox.showinfo('ADDED TO CART', 'Your Selection Has Been Added to Cart')
                     self.pizza_pack_forget()
