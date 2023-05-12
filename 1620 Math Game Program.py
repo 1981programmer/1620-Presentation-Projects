@@ -294,6 +294,11 @@ class MATH_GAME:
          
         except:
             self.first_entry_multiply_number.delete(0, END)
+            self.second_entry_multiply_number.delete(0, END)
+            self.third_entry_multiply_number.delete(0, END)
+            self.first_entry_add_number.delete(0, END)
+            self.second_entry_add_number.delete(0, END)
+            self.third_entry_add_number.delete(0, END)
 
     def game_over(self) -> None:
         '''
