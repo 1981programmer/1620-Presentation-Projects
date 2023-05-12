@@ -16,7 +16,7 @@ class MATH_GAME:
         self.root.resizable(False, False)
         self.canvas = Canvas(width=200, height=5)
         self.minutes: int = 0
-        self.seconds: int = 30
+        self.seconds: int = 5
         self.player_correct_score: int = 0
         self.player_incorrect_score: int = 0
         self.which_sign_for_game: int = 0
